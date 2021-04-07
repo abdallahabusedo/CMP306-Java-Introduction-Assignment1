@@ -1,5 +1,5 @@
-package PACK3;
-import PACK1.*;
+package IdentityMatrixPack;
+import MatrixPack.*;
 public class IdentityMatrix extends Matrix{
     public IdentityMatrix(int R) {
         super(R, R);
@@ -28,17 +28,7 @@ public class IdentityMatrix extends Matrix{
 
     @Override
     public void Transpose() {
-        int[][] transpose = new int[Columns][Rows];
-        for (int i = 0; i < Rows; i++) {
-            for (int j = 0; j < Columns; j++) {
-                transpose[j][i] = A[i][j];
-            }
-        }
-        int temp = 0;
-        temp = Rows;
-        Rows = Columns;
-        Columns = temp;
-        A = transpose;
+        super.Transpose();
     }
 
     @Override

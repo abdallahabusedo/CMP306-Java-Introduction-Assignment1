@@ -1,5 +1,5 @@
-package PACK1;
-import PACK4.*;
+package MatrixPack;
+import AddablePack.*;
 public class Matrix implements Addable{
     public int Rows;
     public int Columns;
@@ -10,7 +10,7 @@ public class Matrix implements Addable{
         Rows = R;
         Columns = C;
     }
-    
+
     public void Print() {
         for (int i = 0; i < Rows; i++) {
             for (int j = 0; j < Columns; j++) {
@@ -28,7 +28,7 @@ public class Matrix implements Addable{
         for (int i = 0; i < Rows; i++) {
             for (int j = 0; j < Columns; j++) {
                 A[i][j] = array[index];
-                index++; 
+                index++;
             }
         }
         return true;
@@ -50,16 +50,16 @@ public class Matrix implements Addable{
         A = transpose;
     }
 
-    
+
 
     @Override
-     public int [][] Add(int[][] B) {
-         for (int i = 0; i < Rows; i++) {
-             for (int j = 0; j < Columns; j++) {
-                 A[i][j] += B[i][j];
-             }
-         }
-         return A;
+    public void Add(int[][] B) {
+        for (int i = 0; i < Rows; i++) {
+            for (int j = 0; j < Columns; j++) {
+                A[i][j] += B[i][j];
+            }
+        }
+
     }
 
 }
