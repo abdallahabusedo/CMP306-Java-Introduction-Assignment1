@@ -1,7 +1,7 @@
 package com.company;
 
 import MatrixPack.Matrix;
-import IdentityMatrixPack.IdentityMatrix;
+import MatrixPack.IdentityMatrix;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package IdentityMatrixPack;
+package MatrixPack;
 import MatrixPack.*;
 public class IdentityMatrix extends Matrix{
     public IdentityMatrix(int R) {
